@@ -3,7 +3,11 @@
 --------------------------------*/
 body {
   margin: 0;
-  padding: 50px 100px;
+  
+}
+
+.all_container{
+    padding: 50px 100px;
 }
 
 /* google fonts poppins inter montserrarrt oswald */
@@ -229,3 +233,70 @@ body {
           blog end  
 --------------------------------*/
 
+/*------------------------------
+          footer start  
+--------------------------------*/
+
+footer{
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+footer h1{
+    text-align: center;
+    color: white;
+}
+
+footer hr{
+    border: .5px solid #080707;
+    width: 90%;
+}
+
+footer .footer_flex{
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    list-style-type: none;
+    margin: 20px 20px;
+    /* text-align: center; */
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+footer .footer_social{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_social i{
+    color: var(--secondary-color);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all .3s ease-in-out;
+}
+
+.footer_social i:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+/*------------------------------
+          blog end  
+--------------------------------*/
