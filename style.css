@@ -1,0 +1,120 @@
+/*------------------------------
+        common style start  
+--------------------------------*/
+body {
+  margin: 0;
+  padding: 50px 100px;
+}
+
+/* google fonts poppins inter montserrarrt oswald */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&family=Oswald:wght@400;500&family=Poppins:ital,wght@0,500;1,300;1,400&family=Roboto:wght@500&display=swap');
+
+
+:root {
+    --primary-color: #030f1b;
+    --secondary-color: deeppink;
+  }
+
+/*------------------------------
+        common style start  
+--------------------------------*/
+
+/*------------------------------
+          header start  
+--------------------------------*/
+
+.header {
+  background: var(--primary-color);
+  display: flex;
+  padding: 50px;
+  padding-bottom: 0px;
+  justify-content: space-evenly;
+  border-radius:20px;
+  overflow: hidden;
+}
+
+/* .header_for_flex {
+  width: 50%;
+} */
+
+
+
+@keyframes slidingright {
+    0%{margin-left: -100px;}
+    100%{margin-left: 0px;}
+    
+}
+
+
+
+@keyframes slidingrightText {
+    0%{margin-left: -100px;}
+    100%{margin-left: 0px;}
+    
+}
+
+.header_text h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  animation: slidingright .5s linear 1s 1 alternate;
+}
+.header_text p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+    animation: slidingrightText .5s linear 1s 1 alternate;
+}
+
+.common_button{
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: white;
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    animation: buttonAnim .5s linear 1s 1;
+    
+}
+
+.common_button:hover{
+    background: var(--secondary-color);
+    cursor: pointer;
+}
+
+@keyframes buttonAnim {
+    0%{
+        margin-left: -100px;
+        
+    } 
+    100%{margin-left: 0;};
+
+}
+
+.common_button i{
+    margin-left: 10px;
+    
+}
+
+
+.header_photo img {
+  width: 350px;
+  height: 500px;
+  animation: headerPhoto .5s linear 1s 1;
+}
+
+@keyframes headerPhoto {
+    0%{margin-right: -100px;}
+    100%{margin-right: 0px;}    
+}
+/*------------------------------
+          header end  
+--------------------------------*/
