@@ -74,7 +74,6 @@ body {
 }
 
 .common_button{
-    border: none;
     outline: none;
     padding: 15px 40px;
     border-radius: 50px;
@@ -82,10 +81,11 @@ body {
     border: 1.5px solid var(--secondary-color);
     color: white;
     transition: all .3s ease-in-out;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+   
     animation: buttonAnim .5s linear 1s 1;
     
 }
@@ -137,6 +137,7 @@ body {
     display: grid;
     grid-template-columns: 362px 1fr 1fr 1fr;
     grid-gap: 20px 20px;
+    grid-template-rows: repeat(4, auto);
 }
 
 .sidebar{
@@ -148,7 +149,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    grid-row: 1 / -5;
+    grid-row: 1 / -12;
 }
 
 .sidebar li{
@@ -169,7 +170,7 @@ body {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     transition: all .3s ease-in-out;
-
+    
 }
 
 .sidebar li a:hover{
@@ -198,17 +199,20 @@ body {
 
 .blog_desc a{
     text-decoration: none;
-    background-color: var(--secondary-color);
-    padding: 5px 10px;
-    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 3px;
     display: inline-block;
-    color: white;
+    color: black;
     font-family: 'Poppins', sans-serif;
     transition: all .3s ease;
+    
 }
 
 .blog_desc a:hover{
-    transform: scale(1.04);
+    background: var(--secondary-color);
+    color: white;
+    border: 1px solid var(--secondary-color);
 }
 
 .blog_desc h3{
@@ -228,6 +232,26 @@ body {
     margin-right: 5px;
 }
 
+.view_all_button{
+    border: 2px solid var(--secondary-color);
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+.view_all_button:hover{
+    background: var(--secondary-color);
+    color: white;
+}
 
 /*------------------------------
           blog end  
@@ -266,8 +290,13 @@ footer li{
 footer a{
     color: white;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
     font-family: 'Inter', sans-serif;
+    transition: all .2s ease-in-out;
+}
+
+footer li a:hover{
+    color: var(--secondary-color);
 }
 
 footer .footer_social{
@@ -294,7 +323,7 @@ footer .footer_social{
 
 .footer_social i:hover{
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: white;
     border: 1px solid var(--secondary-color);
 }
 /*------------------------------
